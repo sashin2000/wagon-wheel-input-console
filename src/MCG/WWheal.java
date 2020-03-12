@@ -64,6 +64,7 @@ public class WWheal extends JFrame implements MouseMotionListener,ActionListener
 		{
 			sshot=1;
 			System.out.println(sshot);
+			System.exit(0);
 		}
 		if(a.getSource()==b2)
 		{
@@ -93,10 +94,10 @@ public class WWheal extends JFrame implements MouseMotionListener,ActionListener
 	}
 	public static void mainui(JFrame f1)
 	{
+		f1.setUndecorated(true);
 		f1.setVisible(true);
 		f1.setSize(1920,1080);
 		f1.getContentPane().setLayout(null);
-		f1.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		f1.getContentPane().add(l1);
 	}
 	public static void selectui(JFrame f2)
